@@ -50,4 +50,4 @@
 При несоответствии формата функция должна генерировать исключение, которое должно влиять на валидацию поля (валидацию мы проходили).
 
 ---
-[![Build status](https://ci.appveyor.com/api/projects/status/k4yd0b5j13twrstt?svg=true)](https://ci.appveyor.com/project/EkaGontsova/ahj_css)
+[![Build status](https://ci.appveyor.com/api/projects/status/k4yd0b5j13twrstt?svg=true)](https://ci.appveyor.com/project/EkaGontsova/ahj_geo)
