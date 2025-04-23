@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(grey, transparent 1px),
+  linear-gradient(90deg,grey, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.timeline {
+  margin-bottom: 20px;
+}
+
+.post {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #727272;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.post__audio {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #727272;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.custom__audio-player {
+  margin-bottom: 10px;
+  width: 60%;
+  height: 55px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.custom__audio-player::-webkit-media-controls-panel {
+  background-color: #f0f0f0;
+}
+
+.custom__audio-player::-webkit-media-controls-play-button,
+.custom__audio-player::-webkit-media-controls-pause-button,
+.custom__audio-player::-webkit-media-controls-mute-button,
+.custom__audio-player::-webkit-media-controls-volume-slider {
+  filter: invert(50%);
+}
+
+.custom__audio-player::-webkit-media-controls-current-time-display,
+.custom__audio-player::-webkit-media-controls-time-remaining-display {
+  color: #000000;
+}
+
+
+.date {
+  color: #727272;
+  font-size: 13px;
+}
+
+.post__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__text {
+  color: #727272;
+  font-size: 20px;
+}
+
+.input__section {
+  display: flex;
+  min-width: 60%;
+  min-height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #727272;
+}
+
+.post__input {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+  color: #727272;
+  font-size: 15px;
+}
+
+.submit__post {
+  display: flex;
+  align-items: center;
+  border: 2px solid #727272;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 5px;
+  padding: 8px;
+  color: #727272;
+  border-radius: 50%;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.buttons__media {
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.start__recording,
+.stop__recording,
+.start__video-recording,
+.cancel__recording {
+  border: 2px solid #727272;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 10px;
+  padding: 8px;
+  color: #727272;
+  border-radius: 50%;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.timer {
+  color: #727272;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.microphone,
+.camera {
+  height: 18px;
+  width: 18px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #727272;
+  border-radius: 10px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #727272;
+}
+
+.modal__content input {
+  outline: none;
+  font-size: 16px;
+  color: #727272;
+  border: 2px solid #727272;
+  height: 30px;
+  width: 100%;
+}
+
+.modal__btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.close__modal {
+  background-color: #fff;
+  border: 2px solid #727272;
+  border-radius: 12px;
+  height: 50px;
+  min-width: 100px;
+
+  cursor: pointer;
+  margin-right: 12px;
+  color: #727272;
+  font-size: 18px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.submit__coords {
+  background-color: #fff;
+  border: 2px solid #727272;
+  border-radius: 12px;
+  height: 50px;
+  min-width: 60px;
+
+  cursor: pointer;
+  color: #727272;
+  font-size: 18px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.coords {
+  margin-top: 20px;
+  color: #727272;
+  font-size: 12px;
+}
